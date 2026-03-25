@@ -1,0 +1,16 @@
+@theme {
+  --color-primary: #17abc9;
+  --color-secondary: #115b78;
+  --color-tertiary: #2c3e4c;
+  --color-quartinary: #3e3a44;
+  --color-dark: #000;
+  --color-light: #f7f7f7;
+  --color-gold: #ffd700;
+  --color-heart-red: #c2262b;
+  --color-prep: #dadada;
+  --font-sans: "Work Sans", sans-serif;
+  --font-cursive: "Merienda", cursive;
+  --text-2-5xl: 1.75rem;
+  --text-3-5xl: 2rem;
+  --text-4-5xl: 2.5rem;
+}

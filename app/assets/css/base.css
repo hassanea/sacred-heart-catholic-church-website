@@ -1,0 +1,117 @@
+@layer base {
+  a,
+  a:visited {
+    background: 0 0;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+  a:hover {
+    @apply text-secondary;
+  }
+
+  p a,
+  p a:visited {
+    line-height: inherit;
+  }
+
+  hr {
+    display: block;
+    border: 1px solid #e3e3e3;
+    padding: 0;
+    margin: 0.75rem 0 1.875rem;
+    height: 1px;
+  }
+
+  ::-moz-selection {
+    background: #11abb0;
+    color: #000814;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #11abb0;
+    color: #000814;
+    text-shadow: none;
+  }
+
+  .sr-only-focusable:active,
+  .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  em {
+    font-style: italic;
+    font-size: 0.9375rem;
+    @apply font-sans;
+  }
+
+  b,
+  strong {
+    font-weight: bolder;
+    font-size: 0.9375rem;
+    @apply font-sans;
+  }
+
+  abbr {
+    @apply font-sans;
+    font-weight: bolder;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    color: gray;
+  }
+
+  abbr:hover {
+    cursor: help;
+  }
+
+  ul {
+    list-style: none outside;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  dl {
+    margin: 0.75rem 0;
+  }
+
+  dt {
+    margin: 0;
+    color: #11abb0;
+  }
+
+  dd {
+    margin: 0 0 0 1.25rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html.dark {
+      color-scheme: dark;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    html.light {
+      color-scheme: light;
+    }
+  }
+}
