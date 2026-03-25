@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#b5d6d6]">
-    <base-skip-link v-focus to="#content" label="Skip to main content" />
+    <base-skip-link to="#content" label="Skip to main content" />
     <NuxtLoadingIndicator />
     <NuxtRouteAnnouncer />
     <NuxtAnnouncer />
@@ -10,6 +10,8 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+// v-focus
+</script>
 
 <style lang="css" scoped></style>

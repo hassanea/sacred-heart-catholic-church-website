@@ -1,8 +1,10 @@
 <template>
-  <base-skip-link v-focus to="#content" label="Skip to main content" />
+  <base-skip-link to="#content" label="Skip to main content" />
   <base-main class="p-16 md:p-20">
     <slot />
   </base-main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// v-focus
+</script>

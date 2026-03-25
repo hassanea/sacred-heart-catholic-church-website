@@ -43,14 +43,20 @@ export default defineNuxtConfig({
     public: {},
   },
   site: {
-    url: "https://beta.esacredheart.org",
+    url: "https://prod.esacredheart.org",
     name: "Sacred Heart Catholic Church - Auburn Hills, MI | Welcome",
   },
   i18n: {
+    locales: ["en-US"],
     defaultLocale: "en-US",
   },
   supabase: {
     redirect: false,
+  },
+  turnstile: {
+    siteKey: "0x4AAAAAAACHtX2rkoWExE1Z",
+    secretKey: "0x4AAAAAAACHtQMSq0FdRt7qfhFl339zqT8",
+    addValidateEndpoint: true,
   },
   fontawesome: {
     proIcons: {
