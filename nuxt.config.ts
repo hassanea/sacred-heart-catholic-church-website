@@ -55,7 +55,6 @@ export default defineNuxtConfig({
   },
   turnstile: {
     siteKey: "0x4AAAAAAACHtX2rkoWExE1Z",
-    secretKey: "0x4AAAAAAACHtQMSq0FdRt7qfhFl339zqT8",
     addValidateEndpoint: true,
   },
   fontawesome: {
