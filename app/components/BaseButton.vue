@@ -49,6 +49,44 @@ const buttonClasses = computed(() => {
       variant === "btn-primary",
     "inline-block absolute top-[13%] right-[1%] z-[1026] align-middle w-12 h-12 my-4 mx-0 p-2 bg-quartinary text-light border-2 border-solid border-heart-red rounded-[10px] cursor-pointer hover:bg-light hover:text-quartinary btn-mobile-nav":
       variant === "btn-mobile-nav",
+    "text-center fixed right-[.5%] bottom-[11%] md:right-[1%] md:bottom-[11.75%] z-1000 bg-primary-dark w-12 h-12 flex rounded-md cursor-pointer pt-0.5 px-0 pb-0 text-3-5xl justify-center items-center hover:bg-quinary focus:border-t-0 focus:border-b-4 focus:border-l-0 focus:border-r-0 focus:border-b-solid focus:border-b-gold focus:outline-0":
+      variant === "btn-top",
+
+    /*
+        right: .5%;
+    bottom: 11%
+      
+      .btn-top {
+    position: fixed;
+    right: 1%;
+    bottom: 11.75%;
+    z-index: 1000;
+    background: var(--dark-primary-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    border-radius: 6px;
+    padding: 2px 0 0;
+    font-size: 2rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.btn-top:hover {
+    background: var(--secondary-color);
+    -webkit-transition: .4s cubic-bezier(.08,  .92,  .84,  .01);
+    -o-transition: .4s cubic-bezier(.08,  .92,  .84,  .01);
+    transition: .4s cubic-bezier(.08,  .92,  .84,  .01);
+}
+.btn-top:active {
+    -webkit-box-shadow: 2px 3px 2px #aaa;
+    box-shadow: 2px 3px 2px #aaa;
+}
+      
+      */
   };
 });
 

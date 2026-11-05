@@ -24,15 +24,13 @@
   }
 
   ::-moz-selection {
-    background: #11abb0;
-    color: #000814;
     text-shadow: none;
+    @apply bg-text-selection text-dark;
   }
 
   ::selection {
-    background: #11abb0;
-    color: #000814;
     text-shadow: none;
+    @apply bg-text-selection text-dark;
   }
 
   .sr-only-focusable:active,

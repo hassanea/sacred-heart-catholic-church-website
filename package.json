@@ -7,31 +7,38 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "check": "npm-check -u",
+    "depcheck": "depcheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/a11y": "1.0.0-alpha.1",
     "@nuxt/eslint": "1.15.2",
     "@nuxt/fonts": "0.14.0",
-    "@nuxt/hints": "1.0.2",
+    "@nuxt/hints": "1.1.1",
     "@nuxt/image": "2.0.0",
-    "@nuxt/scripts": "0.13.2",
+    "@nuxt/scripts": "1.0.6",
     "@nuxthub/core": "0.10.7",
-    "@nuxtjs/i18n": "10.2.4",
-    "@nuxtjs/seo": "4.0.2",
-    "@nuxtjs/supabase": "2.0.4",
+    "@nuxtjs/i18n": "10.3.0",
+    "@nuxtjs/seo": "5.1.3",
+    "@nuxtjs/supabase": "2.0.6",
     "@nuxtjs/turnstile": "1.1.2",
-    "@sentry/nuxt": "^10.46.0",
-    "@tailwindcss/vite": "^4.2.2",
+    "@pinia/nuxt": "0.11.3",
+    "@sentry/nuxt": "^10.52.0",
+    "@tailwindcss/vite": "^4.2.4",
     "@vesp/nuxt-fontawesome": "2.0.0",
-    "@vueuse/nuxt": "14.2.1",
+    "@vueuse/nuxt": "14.3.0",
     "floating-vue": "^5.2.2",
-    "import-in-the-middle": "^3.0.0",
-    "nuxt": "^4.4.2",
-    "playwright-core": "^1.58.2",
-    "tailwindcss": "^4.2.2",
-    "vue": "^3.5.30",
-    "vue-router": "^5.0.4"
+    "import-in-the-middle": "^3.0.1",
+    "nuxt": "^4.4.4",
+    "pinia": "^3.0.4",
+    "playwright-core": "^1.59.1",
+    "tailwindcss": "^4.2.4",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.6",
+    "vue3-google-map": "^0.27.1"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
@@ -40,11 +47,15 @@
     "@fortawesome/pro-regular-svg-icons": "^7.2.0",
     "@fortawesome/pro-solid-svg-icons": "^7.2.0",
     "@types/cloudflare-turnstile": "^0.2.2",
-    "wrangler": "^4.77.0"
+    "wrangler": "^4.90.0"
   },
   "pnpm": {
     "overrides": {
       "@vercel/nft": "^0.27.4"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "vue-demi",
+      "workerd"
+    ]
   }
 }

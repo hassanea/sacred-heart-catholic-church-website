@@ -1,8 +1,16 @@
 @theme {
   --color-primary: #17abc9;
+  --color-primary-light: #c8f0f8;
+  --color-primary-dark: #1288a0;
   --color-secondary: #115b78;
   --color-tertiary: #2c3e4c;
   --color-quartinary: #3e3a44;
+  --color-quinary: #c6e5c6;
+  --color-quinary-light: #e6dfc5;
+  --color-quinary-light: #529f78;
+  --color-senary: #1835c9;
+  --color-alternative: #e5d5d3;
+  --color-text-selection: #b3d4fc;
   --color-dark: #000;
   --color-light: #f7f7f7;
   --color-gold: #ffd700;
@@ -13,4 +21,20 @@
   --text-2-5xl: 1.75rem;
   --text-3-5xl: 2rem;
   --text-4-5xl: 2.5rem;
+
+  --color-primary: #17abc9;
+  --color-secondary: #115b78;
+  --color-tertiary: #2c3e4c;
+  --color-quartinary: #3e3a44;
+  --color-dark: #000;
+  --color-light: #f7f7f7;
+  --color-gold: #ffd700;
+  --color-blue: #1835c9;
+
+  /* --gradient-color: linear-gradient(to top,  #f3e7e9 0%,  #e3eeff 99%,  #e3eeff 100%); */
+  /* --link-color: #38398a; */
+
+  /* transition: background .4s cubic-bezier(.08, .92, .84, .01);  */
+
+  /* :hover, :active, :focus { background: linear-gradient(to top, #f3e7e9 0, #e3eeff 99%, #e3eeff 100%); } */
 }

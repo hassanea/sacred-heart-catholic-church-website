@@ -6,8 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    "@nuxt/a11y",
-    // '@nuxt/content',
+    "@nuxt/a11y", // '@nuxt/content',
     "@nuxt/eslint",
     "@nuxt/fonts",
     "@nuxt/hints",
@@ -18,10 +17,11 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@nuxtjs/supabase",
     "@nuxtjs/turnstile",
-    // "@pinia/nuxt",
+    "floating-vue/nuxt",
     "@vesp/nuxt-fontawesome",
     "@vueuse/nuxt",
     "@sentry/nuxt/module",
+    "@pinia/nuxt",
   ],
   devServer: {
     host: "0.0.0.0",
@@ -40,11 +40,16 @@ export default defineNuxtConfig({
   css: ["./app/assets/css/main.css"],
   hub: {},
   runtimeConfig: {
-    public: {},
+    public: {
+      MapAPIKey: "AIzaSyDXbUItPr6DzA81GdudO8qK_XQWRxjbSro",
+    },
   },
   site: {
     url: "https://prod.esacredheart.org",
     name: "Sacred Heart Catholic Church - Auburn Hills, MI | Welcome",
+  },
+  pinia: {
+    storesDirs: ["./stores/**"],
   },
   i18n: {
     locales: ["en-US"],
@@ -60,10 +65,26 @@ export default defineNuxtConfig({
   fontawesome: {
     proIcons: {
       solid: ["DoNotEnter"],
-      regular: ["FaceThinking"],
+      regular: ["FaceThinking", "HandHeart"],
     },
     icons: {
-      solid: ["Bars", "Bomb", "BookOpen", "Calendar", "Church", "Xmark"],
+      solid: [
+        "Bars",
+        "Bomb",
+        "BookOpen",
+        "Calendar",
+        "CaretDown",
+        "CaretUp",
+        "ChevronUp",
+        "Church",
+        "CircleUser",
+        "Eye",
+        "EyeSlash",
+        "Lock",
+        "Star",
+        "UserPlus",
+        "Xmark",
+      ],
     },
   },
 
@@ -85,6 +106,9 @@ export default defineNuxtConfig({
     format: ["avif", "webp"],
     quality: 80,
     densities: [1, 2, 3],
+    alias: {
+      bulletins: "bulletins/",
+    },
     screens: {
       sm: 640,
       md: 768,
